@@ -1,0 +1,100 @@
+# ============================================================
+# SE_MANIFEST.toml (Repository Declaration)
+# judicial-record
+# ============================================================
+
+schema = "se-manifest-schema"
+schema_url = "https://github.com/structural-explainability/se-manifest-schema/blob/main/manifest-schema.toml"
+
+# === Identity ===
+
+[meta]
+purpose = "To make explicit the boundaries, responsibilities, and expectations of this repository relative to others."
+
+[repo]
+name = "judicial-record"
+org = "structural-explainability"
+class = "record_system"
+kind = "judicial-record"
+status = "active"
+since = "2026"
+summary = "Provides a judicial accountable record system for decisions, opinions, claims, holdings, citations, dependencies, later treatment, and source spans."
+
+[layer]
+space = "application"
+role = "accountable-record-system"
+
+# === Dependencies ===
+
+[depends]
+required = [
+  "structural-explainability/accountable-record@main",
+]
+optional = [
+  "structural-explainability/se-verification-judicial-record@main",
+]
+
+# === Provided artifacts ===
+
+[provides]
+artifacts = [
+  "README.md",
+  "DECISIONS.md",
+  "RECORD_MODEL.md",
+  "EXPORTS.md",
+  "data/examples",
+  "data/records",
+  "data/exports",
+]
+
+# === Scope ===
+
+[scope]
+includes = [
+  "judicial accountable records",
+  "court decision records",
+  "opinion records",
+  "claim records",
+  "holding records",
+  "citation records",
+  "dependency records",
+  "later treatment records",
+  "source spans and review status",
+  "human-readable judicial record reports",
+]
+
+excludes = [
+  "legal advice",
+  "legal correctness determination",
+  "binding authority determination",
+  "replacement of CourtListener, court records, legal citators, or legal research platforms",
+  "claims that citation implies dependency",
+  "claims that later treatment erases historical records",
+  "claims that authority status implies correctness",
+]
+
+# === Validation ===
+
+[validation]
+entrypoint = "uv run judicial-record-validate"
+export_check_entrypoint = "uv run judicial-record-export --check"
+reference_entrypoint = "uv run judicial-record-ref-validate"
+strict_entrypoint = "uv run judicial-record-validate --strict"
+tag_entrypoint = "uv run python -m se_manifest_schema validate --strict --require-tag"
+
+# === Behavior / governance ===
+
+[naming]
+pattern = "judicial-record"
+
+[governance]
+authority = "structural-explainability"
+
+# === External references ===
+
+[citation]
+cff = "CITATION.cff"
+preferred = "software"
+
+[traceability]
+identifier_map = "structural-explainability/judicial-record/RECORD_MODEL.md"

@@ -1,0 +1,20 @@
+{
+  "schema": "se-boundary-scope-exclusions-1",
+  "spec": {
+    "id": "JR",
+    "name": "Judicial Record",
+    "version": "0.1.0",
+    "status": "working-draft"
+  },
+  "excluded": [
+    "legal advice",
+    "legal correctness",
+    "binding authority",
+    "judicial legitimacy",
+    "court record publication",
+    "legal research replacement",
+    "automatic legal reasoning",
+    "legal outcome prediction",
+    "replacements for court record publication or legal research platforms"
+  ]
+}

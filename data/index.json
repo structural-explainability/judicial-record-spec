@@ -1,0 +1,65 @@
+{
+  "schema": "judicial-record-data-index-1",
+  "repo": {
+    "id": "JR",
+    "name": "Judicial Record",
+    "version": "0.1.0",
+    "status": "working-draft"
+  },
+  "description": "Index of machine-readable Judicial Record data artifacts.",
+  "artifacts": [
+    {
+      "id": "jr-requirements",
+      "path": "data/spec/requirements.json",
+      "kind": "requirements",
+      "generated": true,
+      "source": [
+        "SPEC.md",
+        "IDENTIFIERS.md"
+      ],
+      "description": "Generated machine-readable Judicial Record requirements."
+    },
+    {
+      "id": "jr-conformance-checks",
+      "path": "data/spec/conformance-checks.json",
+      "kind": "conformance-checks",
+      "generated": true,
+      "source": [
+        "CONFORMANCE.md",
+        "IDENTIFIERS.md"
+      ],
+      "description": "Generated machine-readable Judicial Record conformance checks."
+    },
+    {
+      "id": "jr-scope-exclusions",
+      "path": "data/spec/scope-exclusions.json",
+      "kind": "scope-exclusions",
+      "generated": true,
+      "source": [
+        "SPEC.md"
+      ],
+      "description": "Generated machine-readable Judicial Record scope exclusions."
+    },
+    {
+      "id": "jr-example-records",
+      "path": "data/examples/example-judicial-records.json",
+      "kind": "example-records",
+      "generated": false,
+      "source": [
+        "RECORD_MODEL.md"
+      ],
+      "description": "Example judicial records for model inspection and verifier development."
+    },
+    {
+      "id": "jr-record-bundle",
+      "path": "data/exports/judicial-record-bundle.json",
+      "kind": "export-bundle",
+      "generated": false,
+      "source": [
+        "EXPORTS.md",
+        "RECORD_MODEL.md"
+      ],
+      "description": "Example verification-ready Judicial Record export bundle."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "se-boundary-requirements-1",
+  "spec": {
+    "id": "JR",
+    "name": "Judicial Record",
+    "version": "0.1.0",
+    "status": "working-draft"
+  },
+  "requirements": [
+    {
+      "id": "JR.CASE.RECORD",
+      "note": "Defines case records as procedural units within which judicial decisions and opinions occur.",
+      "normative_source": "SPEC.md#JR.CASE.RECORD"
+    },
+    {
+      "id": "JR.CITATION.RECORD",
+      "note": "Defines citation records as references from an opinion or decision to an authority.",
+      "normative_source": "SPEC.md#JR.CITATION.RECORD"
+    },
+    {
+      "id": "JR.CLAIM.RECORD",
+      "note": "Defines claim records as assertions made within an opinion.",
+      "normative_source": "SPEC.md#JR.CLAIM.RECORD"
+    },
+    {
+      "id": "JR.COLLAPSE.PROHIBITED",
+      "note": "Prohibits judicial category collapses such as citation-to-dependency or claim-to-holding.",
+      "normative_source": "SPEC.md#JR.COLLAPSE.PROHIBITED"
+    },
+    {
+      "id": "JR.CONFORMANCE.AR.REQUIRED",
+      "note": "Requires conformance with Accountable Record.",
+      "normative_source": "SPEC.md#JR.CONFORMANCE.AR.REQUIRED"
+    },
+    {
+      "id": "JR.CONFORMANCE.SE.REQUIRED",
+      "note": "Requires conformance with Structural Explainability.",
+      "normative_source": "SPEC.md#JR.CONFORMANCE.SE.REQUIRED"
+    },
+    {
+      "id": "JR.DECISION.RECORD",
+      "note": "Defines decision records as dispositions of cases by courts.",
+      "normative_source": "SPEC.md#JR.DECISION.RECORD"
+    },
+    {
+      "id": "JR.DEFINITION.CORE",
+      "note": "Defines JR as the judicial domain profile of AR.",
+      "normative_source": "SPEC.md#JR.DEFINITION.CORE"
+    },
+    {
+      "id": "JR.DEPENDENCY.RECORD",
+      "note": "Defines dependency records as declared reliance among judicial records.",
+      "normative_source": "SPEC.md#JR.DEPENDENCY.RECORD"
+    },
+    {
+      "id": "JR.HOLDING.RECORD",
+      "note": "Defines holding records as controlling determinations of decisions.",
+      "normative_source": "SPEC.md#JR.HOLDING.RECORD"
+    },
+    {
+      "id": "JR.LATER_TREATMENT.RECORD",
+      "note": "Defines later treatment records as additive records of subsequent treatment.",
+      "normative_source": "SPEC.md#JR.LATER_TREATMENT.RECORD"
+    },
+    {
+      "id": "JR.OPINION.RECORD",
+      "note": "Defines opinion records as reasoning offered in support of decisions.",
+      "normative_source": "SPEC.md#JR.OPINION.RECORD"
+    },
+    {
+      "id": "JR.REVIEW_STATUS.RECORD",
+      "note": "Defines review status records for procedural posture with respect to review.",
+      "normative_source": "SPEC.md#JR.REVIEW_STATUS.RECORD"
+    },
+    {
+      "id": "JR.SCOPE.EXCLUSIONS",
+      "note": "Defines what JR explicitly does not specify.",
+      "normative_source": "SPEC.md#JR.SCOPE.EXCLUSIONS"
+    },
+    {
+      "id": "JR.SOURCE_SPAN.REFERENCE",
+      "note": "Defines source span references to locations within source documents.",
+      "normative_source": "SPEC.md#JR.SOURCE_SPAN.REFERENCE"
+    },
+    {
+      "id": "JR.VERSIONING",
+      "note": "Defines JR versioning requirements.",
+      "normative_source": "SPEC.md#JR.VERSIONING"
+    }
+  ]
+}
