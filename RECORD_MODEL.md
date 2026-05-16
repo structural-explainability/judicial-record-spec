@@ -2,7 +2,7 @@
 
 Status: Working Draft
 
-This document defines the working record model for `judicial-record`.
+This document defines the working record model for `judicial-record-spec`.
 
 Judicial Record (JR) is an Accountable Record domain profile for judicial
 reasoning and dependency.
@@ -507,7 +507,7 @@ A judicial record system should be able to export a bundle containing:
 - version declarations for JR and AR
 
 The exported bundle should be suitable for checking by
-`se-verification-judicial-record`.
+`se-verification-judicial-record-spec`.
 
 ## Clarifying Statement
 

@@ -80,7 +80,7 @@ wheels = [
 ]
 
 [[package]]
-name = "judicial-record"
+name = "judicial-record-spec"
 source = { editable = "." }
 dependencies = [
     { name = "se-manifest-schema" },

@@ -1,6 +1,6 @@
 """Tests for specification configuration."""
 
-from judicial_record.spec_config import SPEC_CONFIG
+from judicial_record_spec.spec_config import SPEC_CONFIG
 
 
 def test_spec_config_has_export_schemas() -> None:

@@ -1,6 +1,6 @@
 # ============================================================
 # SE_MANIFEST.toml (Repository Declaration)
-# judicial-record
+# judicial-record-spec
 # ============================================================
 
 schema = "se-manifest-schema"
@@ -12,10 +12,10 @@ schema_url = "https://github.com/structural-explainability/se-manifest-schema/bl
 purpose = "To make explicit the boundaries, responsibilities, and expectations of this repository relative to others."
 
 [repo]
-name = "judicial-record"
+name = "judicial-record-spec"
 org = "structural-explainability"
 class = "record_system"
-kind = "judicial-record"
+kind = "judicial-record-spec"
 status = "active"
 since = "2026"
 summary = "Provides a judicial accountable record system for decisions, opinions, claims, holdings, citations, dependencies, later treatment, and source spans."
@@ -31,7 +31,7 @@ required = [
   "structural-explainability/accountable-record@main",
 ]
 optional = [
-  "structural-explainability/se-verification-judicial-record@main",
+  "structural-explainability/se-verification-judicial-record-spec@main",
 ]
 
 # === Provided artifacts ===
@@ -76,16 +76,16 @@ excludes = [
 # === Validation ===
 
 [validation]
-entrypoint = "uv run judicial-record-validate"
-export_check_entrypoint = "uv run judicial-record-export --check"
-reference_entrypoint = "uv run judicial-record-ref-validate"
-strict_entrypoint = "uv run judicial-record-validate --strict"
+entrypoint = "uv run judicial-record-spec-validate"
+export_check_entrypoint = "uv run judicial-record-spec-export --check"
+reference_entrypoint = "uv run judicial-record-spec-ref-validate"
+strict_entrypoint = "uv run judicial-record-spec-validate --strict"
 tag_entrypoint = "uv run python -m se_manifest_schema validate --strict --require-tag"
 
 # === Behavior / governance ===
 
 [naming]
-pattern = "judicial-record"
+pattern = "judicial-record-spec"
 
 [governance]
 authority = "structural-explainability"
@@ -97,4 +97,4 @@ cff = "CITATION.cff"
 preferred = "software"
 
 [traceability]
-identifier_map = "structural-explainability/judicial-record/RECORD_MODEL.md"
+identifier_map = "structural-explainability/judicial-record-spec/RECORD_MODEL.md"

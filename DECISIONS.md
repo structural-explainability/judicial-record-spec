@@ -4,7 +4,7 @@ This document records founding decisions.
 
 ## Decision 1: Define Judicial Record as an Accountable Record system
 
-Decision: `judicial-record` implements the Accountable Record contract for
+Decision: `judicial-record-spec` implements the Accountable Record contract for
 judicial reasoning and dependency.
 
 Rationale: Judicial materials span cases, decisions, opinions, claims,
@@ -109,7 +109,7 @@ Consequences:
 ## Decision 7: Keep the implementation verifiable
 
 Decision: The record model and exports are designed for verification by
-`se-verification-judicial-record`.
+`se-verification-judicial-record-spec`.
 
 Rationale: The purpose of the system is not only to store judicial records,
 but to make the record discipline externally checkable.

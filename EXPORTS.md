@@ -2,7 +2,7 @@
 
 Status: Working Draft
 
-This document describes the export structure produced by `judicial-record`
+This document describes the export structure produced by `judicial-record-spec`
 for validation, inspection, and SE verification.
 
 Judicial Record exports are designed to make judicial records portable,
@@ -58,11 +58,11 @@ data/
     conformance-checks.json
     scope-exclusions.json
   examples/
-    example-judicial-records.json
+    example-judicial-record-specs.json
   records/
     example-records.json
   exports/
-    judicial-record-bundle.json
+    judicial-record-spec-bundle.json
 ```
 
 ## Export Bundle
@@ -72,18 +72,18 @@ The primary export artifact is a judicial record bundle.
 Suggested filename:
 
 ```text
-data/exports/judicial-record-bundle.json
+data/exports/judicial-record-spec-bundle.json
 ```
 
 Suggested top-level shape:
 
 ```json
 {
-  "schema": "judicial-record-bundle-1",
+  "schema": "judicial-record-spec-bundle-1",
   "bundle_id": "jr-bundle:example",
   "generated_at": "2026-05-16",
   "versions": {
-    "judicial_record": "0.1.0",
+    "judicial_record_spec": "0.1.0",
     "accountable_record": "0.1.0"
   },
   "conformance": {
@@ -379,7 +379,7 @@ An export is valid when:
 The export bundle is the handoff artifact for:
 
 ```text
-se-verification-judicial-record
+se-verification-judicial-record-spec
 ```
 
 The verifier checks whether the exported bundle preserves the distinctions

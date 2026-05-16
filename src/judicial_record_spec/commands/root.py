@@ -3,9 +3,9 @@
 
 import argparse
 
-from judicial_record.commands.manifest import sync_main
-from judicial_record.commands.reference import ref_export_main, ref_validate_main
-from judicial_record.commands.validate import validate_main
+from judicial_record_spec.commands.manifest import sync_main
+from judicial_record_spec.commands.reference import ref_export_main, ref_validate_main
+from judicial_record_spec.commands.validate import validate_main
 
 
 def main(argv: list[str] | None = None) -> int:

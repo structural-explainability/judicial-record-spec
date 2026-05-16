@@ -1,9 +1,9 @@
 """Tests for canonical requirement identifiers."""
 
-from judicial_record.spec_config import SPEC_CONFIG
-from judicial_record.utils.extractor_utils import extract_identifier_notes
-from judicial_record.utils.load_utils import load_text
-from judicial_record.utils.path_utils import repo_root
+from judicial_record_spec.spec_config import SPEC_CONFIG
+from judicial_record_spec.utils.extractor_utils import extract_identifier_notes
+from judicial_record_spec.utils.load_utils import load_text
+from judicial_record_spec.utils.path_utils import repo_root
 
 
 def test_each_identifier_has_one_note() -> None:

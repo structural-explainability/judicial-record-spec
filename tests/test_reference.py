@@ -3,14 +3,14 @@
 from pathlib import Path
 from typing import Final
 
-from judicial_record.reference import (
+from judicial_record_spec.reference import (
     _ArtifactResult,
     _kind_to_section,
     _make_stub,
     _merge,
     _process_artifact,
 )
-from judicial_record.utils.ref_utils import LeanDecl
+from judicial_record_spec.utils.ref_utils import LeanDecl
 
 EXAMPLE_ARTIFACT_ID: Final[str] = "example"
 EXAMPLE_CORE_MODULE: Final[str] = "Example.Core"

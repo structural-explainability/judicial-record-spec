@@ -1,5 +1,5 @@
 {
-  "schema": "judicial-record-data-index-1",
+  "schema": "judicial-record-spec-data-index-1",
   "repo": {
     "id": "JR",
     "name": "Judicial Record",
@@ -42,7 +42,7 @@
     },
     {
       "id": "jr-example-records",
-      "path": "data/examples/example-judicial-records.json",
+      "path": "data/examples/example-judicial-record-specs.json",
       "kind": "example-records",
       "generated": false,
       "source": [
@@ -52,7 +52,7 @@
     },
     {
       "id": "jr-record-bundle",
-      "path": "data/exports/judicial-record-bundle.json",
+      "path": "data/exports/judicial-record-spec-bundle.json",
       "kind": "export-bundle",
       "generated": false,
       "source": [

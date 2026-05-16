@@ -3,9 +3,12 @@
 import argparse
 from pathlib import Path
 
-from judicial_record.utils.load_utils import load_fallback_version
-from judicial_record.utils.orchestrate_utils import run_ref_export, run_ref_validate
-from judicial_record.utils.ref_utils import find_repo_root
+from judicial_record_spec.utils.load_utils import load_fallback_version
+from judicial_record_spec.utils.orchestrate_utils import (
+    run_ref_export,
+    run_ref_validate,
+)
+from judicial_record_spec.utils.ref_utils import find_repo_root
 
 
 def ref_export_main(argv: list[str] | None = None) -> int:

@@ -11,7 +11,7 @@
 # ============================================================
 
 [project]
-name = "judicial-record" # Package distribution name (lowercase and dashes).
+name = "judicial-record-spec" # Package distribution name (lowercase and dashes).
 readme = "README.md"
 requires-python = ">=3.15"
 dynamic = ["version"] # WHY: Version is computed from git tags at build time (see [tool.hatch.version] below).
@@ -40,10 +40,10 @@ docs = [
 ]
 
 [project.scripts]
-se-validate = "judicial_record.cli:validate_main"
-se-manifest-version-sync = "judicial_record.cli:sync_main"
-se-ref-validate = "judicial_record.cli:ref_validate_main"
-se-ref-export = "judicial_record.cli:ref_export_main"
+se-validate = "judicial_record_spec.cli:validate_main"
+se-manifest-version-sync = "judicial_record_spec.cli:sync_main"
+se-ref-validate = "judicial_record_spec.cli:ref_validate_main"
+se-ref-export = "judicial_record_spec.cli:ref_export_main"
 
 # ============================================================
 # SECTION 2: TOOL CONFIGURATION (Professional basics)
@@ -82,7 +82,7 @@ reportUnknownArgumentType = "none"
 # WHY: Consistent test discovery and coverage visibility.
 minversion = "9.0"
 testpaths = ["tests"]
-addopts = "--cov=judicial_record --cov-report=term-missing --cov-fail-under=45"
+addopts = "--cov=judicial_record_spec --cov-report=term-missing --cov-fail-under=45"
 
 # === RUFF (PYTHON FORMATTING AND LINTING) ===
 
@@ -169,11 +169,11 @@ requires = ["hatchling", "hatch-vcs"]
 [tool.hatch.build.hooks.vcs]
 # WHY: Writes computed version into src/*/_version.py at build time.
 # CUSTOM: Must match src/ folders.
-version-file = "src/judicial_record/_version.py"
+version-file = "src/judicial_record_spec/_version.py"
 
 [tool.hatch.build.targets.wheel]
 # CUSTOM: Must match src/ folders.
-packages = ["src/judicial_record"]  # REQ.PACKAGES: Discovery rooted at src/.
+packages = ["src/judicial_record_spec"]  # REQ.PACKAGES: Discovery rooted at src/.
 
 [tool.hatch.metadata]
 allow-direct-references = true # WHY: Allow direct references to git repos for dependencies, common in greenfield projects.

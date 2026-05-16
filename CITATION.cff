@@ -17,13 +17,13 @@ authors:
     given-names: Denise M.
     orcid: "https://orcid.org/0000-0001-6165-7389"
 
-repository-code: "https://github.com/structural-explainability/judicial-record"
+repository-code: "https://github.com/structural-explainability/judicial-record-spec"
 license: MIT
 
 keywords:
   - structural-explainability
   - accountable-record
-  - judicial-record
+  - judicial-record-spec
   - court-decisions
   - legal-reasoning
   - citations

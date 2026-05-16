@@ -2,35 +2,35 @@
 
 from pathlib import Path
 
-from judicial_record.spec_config import SPEC_CONFIG
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.spec_config import SPEC_CONFIG
+from judicial_record_spec.utils.export_utils import (
     ConformanceCheck,
     ConformanceExport,
     RequirementExport,
     ScopeExclusionExport,
 )
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.utils.export_utils import (
     build_conformance_export as _build_conformance_export,
 )
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.utils.export_utils import (
     build_requirements_export as _build_requirements_export,
 )
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.utils.export_utils import (
     build_scope_exclusions_export as _build_scope_exclusions_export,
 )
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.utils.export_utils import (
     canonical_ids as _canonical_ids,
 )
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.utils.export_utils import (
     canonical_requirements as _canonical_requirements,
 )
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.utils.export_utils import (
     export_all as _export_all,
 )
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.utils.export_utils import (
     extract_conformance_checks as _extract_conformance_checks,
 )
-from judicial_record.utils.export_utils import (
+from judicial_record_spec.utils.export_utils import (
     extract_scope_exclusions as _extract_scope_exclusions,
 )
 

@@ -1,12 +1,12 @@
-# judicial-record
+# judicial-record-spec
 
-[![Repo](https://img.shields.io/badge/repo-GitHub-black?logo=github)](https://github.com/structural-explainability/judicial-record)
+[![Repo](https://img.shields.io/badge/repo-GitHub-black?logo=github)](https://github.com/structural-explainability/judicial-record-spec)
 [![Tooling](https://img.shields.io/badge/python-3.15%2B-blue?logo=python)](./pyproject.toml)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](./LICENSE)
 
-[![CI](https://github.com/structural-explainability/judicial-record/actions/workflows/ci-python.yml/badge.svg?branch=main)](https://github.com/structural-explainability/judicial-record/actions/workflows/ci-python.yml)
-[![Links](https://github.com/structural-explainability/judicial-record/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/structural-explainability/judicial-record/actions/workflows/links.yml)
-[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/structural-explainability/judicial-record/security)
+[![CI](https://github.com/structural-explainability/judicial-record-spec/actions/workflows/ci-python.yml/badge.svg?branch=main)](https://github.com/structural-explainability/judicial-record-spec/actions/workflows/ci-python.yml)
+[![Links](https://github.com/structural-explainability/judicial-record-spec/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/structural-explainability/judicial-record-spec/actions/workflows/links.yml)
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/structural-explainability/judicial-record-spec/security)
 
 > Judicial accountable record system for opinions, claims,
 > holdings, citations, dependencies, and later treatment.
@@ -130,7 +130,7 @@ This system does NOT define:
   CourtListener, court websites, and citator services.
 - Judicial Record does not replace those standards or services.
 - Judicial Record produces export bundles that may be checked by
-  `se-verification-judicial-record`.
+  `se-verification-judicial-record-spec`.
 - SE verification checks whether Judicial Record preserves SE-relevant
   distinctions without determining legal correctness.
 
@@ -172,9 +172,9 @@ inspectable across disagreement, reinterpretation, and time.
 Open a machine terminal where you want the project:
 
 ```shell
-git clone https://github.com/structural-explainability/judicial-record
+git clone https://github.com/structural-explainability/judicial-record-spec
 
-cd judicial-record
+cd judicial-record-spec
 code .
 ```
 
@@ -188,19 +188,27 @@ uv sync --extra dev --extra docs --upgrade
 # install git hooks once per clone
 uvx pre-commit install
 
-# generate/check registry artifacts
-uv run se-validate
-uv run se-ref-export
-uv run se-ref-export --check
-uv run se-ref-validate
-uv run se-validate --strict
-
 # autofix and manual fix issues
 git add -A
 uvx pre-commit run --all-files
 # repeat if changes were made
 git add -A
 uvx pre-commit run --all-files
+
+# validate Markdown sources and generated specification artifacts
+uv run se-validate
+
+# generate machine-readable specification artifacts under data/spec/
+uv run se-ref-export
+
+# check that generated data/spec/ artifacts are current
+uv run se-ref-export --check
+
+# validate reference artifacts and registry consistency
+uv run se-ref-validate
+
+# run strict validation, including all standard source and export checks
+uv run se-validate --strict
 
 # do chores
 uv run python -m pyright

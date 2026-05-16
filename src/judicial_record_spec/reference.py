@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from judicial_record.utils.ref_utils import (
+from judicial_record_spec.utils.ref_utils import (
     SECTION_LEAN_KINDS,
     LeanDecl,
     extract_decls,
