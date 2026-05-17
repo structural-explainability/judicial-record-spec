@@ -11,6 +11,17 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ## [Unreleased]
 
+### Changed
+
+- Revised `JR.DEPENDENCY.RECORD` to reflect what curatorial work against
+  real Supreme Court cases revealed about legal-informatics dependency.
+  Dependency records now identify the originating source, the grounding
+  citation, the dependency type, and the records the dependency supports.
+  Previous draft used dependent_id/depended_on_id with a free-text basis.
+- Updated `RECORD_MODEL.md`, `EXPORTS.md`, and `CONFORMANCE.md` to match.
+- Revised Decision 2 in `DECISIONS.md` to reflect the refined dependency
+  record shape.
+
 ---
 
 ## [0.1.0] - 2026-05-16

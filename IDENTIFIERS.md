@@ -87,7 +87,8 @@ JR.DEFINITION.CORE
 
 JR.DEPENDENCY.RECORD
 
-- Defines dependency records as declared reliance among judicial records.
+- Defines dependency records as declared reliance of one or more judicial
+  records on a cited authority through a specific source.
 
 JR.HOLDING.RECORD
 

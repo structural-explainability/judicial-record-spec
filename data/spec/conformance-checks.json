@@ -110,15 +110,19 @@
       "id": "JR.DEPENDENCY.RECORD",
       "checks": [
         "[ ] Dependency records conform to AR.DEPENDENCY.RECORD.",
-        "[ ] Dependency records identify the dependent record.",
-        "[ ] Dependency records identify the depended-upon record.",
+        "[ ] Dependency records identify the originating source.",
+        "[ ] Dependency records identify the citation that grounds the dependency.",
+        "[ ] Dependency records declare the dependency type.",
+        "[ ] Dependency records identify the judicial records that the dependency",
         "[ ] Dependency records remain distinguishable from citation records.",
-        "[ ] Dependency records do not imply that the depended-upon record is correct, binding, or legitimate.",
-        "[ ] Dependency records do not imply that the dependent record is valid.",
-        "binding authority, legitimacy, or proof."
+        "[ ] Dependency records do not modify the citation record or the supporting",
+        "[ ] Dependency records do not imply that the cited authority is correct,",
+        "[ ] Dependency records do not imply that the supporting records are valid."
       ],
       "failure_conditions": [
-        "dependency is treated as citation, validity, correctness,"
+        "dependency is treated as citation, validity, correctness,",
+        "dependency modifies the citation or any supporting record.",
+        "dependency type is undeclared or outside the controlled vocabulary"
       ]
     },
     {

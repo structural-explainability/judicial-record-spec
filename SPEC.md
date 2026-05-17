@@ -176,19 +176,27 @@ JR does not define:
 
 ## JR.DEPENDENCY.RECORD
 
-JR MUST provide a structural form for dependency records that represent
-declared reliance of one judicial record on another.
+JR MUST support a structural form for dependency records that represents
+declared reliance of one or more judicial records on a cited authority.
 
 Dependency records:
 
 - MUST conform to AR.DEPENDENCY.RECORD
-- MUST identify the dependent record and the depended-upon record
+- MUST identify the originating source
+- MUST identify the citation that grounds the dependency
+- MUST declare the dependency type
+- MUST identify the judicial records that the dependency supports
 - MUST be distinguishable from citation records
-- MUST NOT imply that the depended-upon record is correct, binding, or legitimate
-- MUST NOT imply that the dependent record is valid
+- MUST NOT modify the citation record or the supporting records
+- MUST NOT assert correctness, authority, legitimacy, or enforcement of
+the cited authority
 
-A dependency record asserts that a record relied on another.
-It does not assert that the reliance was warranted or that either record is correct.
+A citation records that a reference was made.
+A dependency records that one or more judicial records rely on
+that citation in a declared way.
+The dependency type identifies the kind of reliance
+(constitutional authority, precedent, doctrinal foundation, etc.).
+The supports list identifies the records the dependency upholds.
 
 ## JR.HOLDING.RECORD
 

@@ -269,15 +269,21 @@ Dependency example:
 {
   "id": "dependency:opinion:example:on:precedent:001",
   "record_type": "dependency_record",
-  "dependent_record_ref": "opinion:case:example-court:2024:001:majority",
-  "depended_on_record_ref": "case:precedent-court:2010:042",
-  "dependency_basis": "reasoning relies on the holding of the cited authority",
-  "asserting_actor": "curator:example"
+  "record_slug": "example-case-slug",
+  "source_id": "source:opinion:example",
+  "citation_id": "citation:opinion:example:to:precedent:001",
+  "dependency_type": "precedent-binding",
+  "supports": [
+    "holding:decision:example:001"
+  ],
+  "status": "draft"
 }
 ```
 
 A citation record asserts that a reference was made.
-A dependency record asserts that reliance was declared, with stated basis.
+A dependency record asserts that one or more judicial records rely on a
+citation in a declared way, with the kind of reliance declared as the
+dependency type.
 These are separate records.
 
 ## Later Treatment Exports

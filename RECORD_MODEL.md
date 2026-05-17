@@ -269,29 +269,42 @@ A citation record:
 
 ## Dependency Record
 
-A dependency record represents declared reliance of one judicial record on
-another.
+A dependency record represents declared reliance of one or more judicial
+records on a cited authority through a specific source.
 
 ```json
 {
   "id": "dependency:opinion:example:on:precedent:001",
   "record_type": "dependency_record",
-  "dependent_record_ref": "opinion:case:example-court:2024:001:majority",
-  "depended_on_record_ref": "case:precedent-court:2010:042",
-  "dependency_basis": "reasoning relies on the holding of the cited authority",
-  "asserting_actor": "curator:example",
-  "source_refs": ["source-span:opinion:example:para:18-19"]
+  "record_slug": "example-case-slug",
+  "source_id": "source:opinion:example",
+  "citation_id": "citation:opinion:example:to:precedent:001",
+  "dependency_type": "precedent-binding",
+  "supports": [
+    "holding:decision:example:001",
+    "claim:opinion:example:003"
+  ],
+  "status": "draft"
 }
 ```
 
 A dependency record:
 
 - conforms to `AR.DEPENDENCY.RECORD` and `JR.DEPENDENCY.RECORD`
-- identifies the dependent record and the depended-upon record
+- identifies the originating source
+- identifies the citation that grounds the dependency
+- declares the dependency type
+- identifies the judicial records that the dependency supports
 - remains distinct from citation records
-- does not imply that the depended-upon record is correct, binding, or
-  legitimate
-- does not imply that the dependent record is valid
+- does not modify the citation record or the supporting records
+- does not imply that the cited authority is correct, binding, or legitimate
+- does not imply that the supporting records are valid
+
+A citation records that a reference was made.
+A dependency records that one or more judicial records rely on that citation
+in a declared way.
+The dependency type identifies the kind of reliance.
+The supported records identify what the dependency upholds.
 
 ## Later Treatment Record
 

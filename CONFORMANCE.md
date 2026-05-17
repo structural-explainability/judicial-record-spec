@@ -98,13 +98,22 @@ Failure of any single check constitutes non-conformance.
 ## JR.DEPENDENCY.RECORD
 
 - [ ] Dependency records conform to AR.DEPENDENCY.RECORD.
-- [ ] Dependency records identify the dependent record.
-- [ ] Dependency records identify the depended-upon record.
+- [ ] Dependency records identify the originating source.
+- [ ] Dependency records identify the citation that grounds the dependency.
+- [ ] Dependency records declare the dependency type.
+- [ ] Dependency records identify the judicial records that the dependency
+      supports.
 - [ ] Dependency records remain distinguishable from citation records.
-- [ ] Dependency records do not imply that the depended-upon record is correct, binding, or legitimate.
-- [ ] Dependency records do not imply that the dependent record is valid.
+- [ ] Dependency records do not modify the citation record or the supporting
+      records.
+- [ ] Dependency records do not imply that the cited authority is correct,
+      binding, or legitimate.
+- [ ] Dependency records do not imply that the supporting records are valid.
 - Fail if: dependency is treated as citation, validity, correctness,
-- binding authority, legitimacy, or proof.
+  binding authority, legitimacy, or proof.
+- Fail if: dependency modifies the citation or any supporting record.
+- Fail if: dependency type is undeclared or outside the controlled vocabulary
+  used by the implementing system.
 
 ## JR.HOLDING.RECORD
 

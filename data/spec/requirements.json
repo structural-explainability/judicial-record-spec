@@ -49,7 +49,7 @@
     },
     {
       "id": "JR.DEPENDENCY.RECORD",
-      "note": "Defines dependency records as declared reliance among judicial records.",
+      "note": "Defines dependency records as declared reliance of one or more judicial",
       "normative_source": "SPEC.md#JR.DEPENDENCY.RECORD"
     },
     {

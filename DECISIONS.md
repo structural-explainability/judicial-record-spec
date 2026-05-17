@@ -25,18 +25,22 @@ Consequences:
 
 Decision: Citation records and dependency records are separate record types.
 
-Rationale: A citation records that a reference was made. A dependency records
-that reliance was declared, with stated basis. Collapsing these into one
-record loses the distinction between what an opinion mentioned and what it
-relied on, which is load-bearing for inspection and contestation.
+Rationale: A citation records that a reference was made. A dependency
+records that one or more judicial records rely on a citation in a declared
+way. Collapsing these into one record loses the distinction between what
+an opinion mentioned and what one or more judicial records rely on, which
+is load-bearing for inspection and contestation.
 
 Consequences:
 
-- Citation records identify the citing record and cited authority.
-- Dependency records identify the dependent record, the depended-upon record,
-  and the basis for the asserted reliance.
+- Citation records identify the citing record and the cited authority.
+- Dependency records identify the originating source, the grounding citation,
+  the kind of dependency, and the records the dependency supports.
 - Citation records do not imply reliance.
-- Dependency records do not imply correctness of either record.
+- Dependency records do not imply correctness of the cited authority or
+  validity of the supporting records.
+- Citation records and dependency records carry different defining fields
+  and remain distinguishable in records, exports, and verification.
 
 ## Decision 3: Separate claim records from holding records
 
